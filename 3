@@ -1,4 +1,2 @@
-sudo ufw allow ssh
-sudo ufw allow http
-sudo ufw enable
-sudo ufw status verbose
+sudo tar -czvf ~/website_backup_$(date +%F).tar.gz /var/www/html
+ls -lh ~/website_backup_*.tar.gz
