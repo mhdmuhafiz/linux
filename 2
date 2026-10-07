@@ -1,0 +1,7 @@
+CREATE DATABASE studentdb;
+CREATE USER 'studentuser'@'localhost' IDENTIFIED BY 'StrongPass#123';
+GRANT ALL PRIVILEGES ON studentdb.* TO 'studentuser'@'localhost';
+FLUSH PRIVILEGES;
+SHOW DATABASES;
+SELECT User, Host FROM mysql.user;
+EXIT;
